@@ -4,6 +4,12 @@
 $(document).ready(function () {
     ////////// WINDOW SETTING //////////
     checkAspect();
+
+    var onAnimationElm = document.querySelectorAll('.on_fade');
+    console.log(onAnimationElm);
+    for (var i = 0; i < onAnimationElm.length; i++) {
+        onAnimationElm[i].classList.add('on');
+    }
 });
 
 ////////////////////////////////

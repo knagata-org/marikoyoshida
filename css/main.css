@@ -17,6 +17,8 @@
   --hover-filter: 70%;
   --hover-color: #FFFA;
   --menu-display: none;
+  --sans: "Lato", "Noto Sans JP";
+  --serif: "EB Garamond", "Noto Serif JP";
 }
 
 /* ------------------ */
@@ -25,7 +27,32 @@
 
 body {
   padding-bottom: 3rem;
-  font-family: "Lato", "Noto Sans JP";
+  font-family: var(--sans);
+  font-size: medium;
+  font-weight: 500;
+}
+
+h1 {
+  font-family: var(--serif);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
 }
 
 .container-img{
@@ -44,6 +71,15 @@ body {
   opacity: 0;
 }
 .scroll_fade.on {
+  transform: translateY(0);
+  opacity: 2.0;
+}
+.on_fade {
+  transition: 0.8s ease-in-out;
+  transform: translateY(0);
+  opacity: 0;
+}
+.on_fade.on {
   transform: translateY(0);
   opacity: 2.0;
 }
@@ -142,87 +178,6 @@ body {
 
 .btn{
   z-index: 9998;
-}
-
-.header {
-  position: relative;
-}
-
-.header__nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: #fff0f7;
-  padding: 20px 28px;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .5s, visibility .5s;
-  &.is-open {
-    opacity: 1;
-    visibility: visible;
-  }
-}
-.header__nav-list {
-  list-style: none;
-}
-.header__nav-item {
-  margin: 15px 0;
-  a {
-    color: #333;
-    text-decoration: none;
-  }
-}
-
-.hamburger {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 20px;
-    height: 17px;
-    z-index: ９９９９;
-    &__trigger {
-        display: inline-block;
-        transition: all .4s;
-        box-sizing: border-box;
-        position: relative;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        outline: none;
-        width: 24px;
-        height: 21px;
-        span{
-            display: inline-block;
-            transition: all .4s;
-            position: absolute;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background-color: #000;
-        }
-        span:nth-of-type(1) {
-            top: 0;
-        }
-        span:nth-of-type(2) {
-            top: 9px;
-            transition: all .25s .25s;
-            opacity: 1;
-        }
-        span:nth-of-type(3) {
-            bottom: 0;
-        }
-        &.is-active span:nth-of-type(1) {
-            transform: translateY(9px) rotate(-45deg);
-        }
-        &.is-active span:nth-of-type(2) {
-            opacity: 0;
-        }
-        &.is-active span:nth-of-type(3) {
-            transform: translateY(-9px) rotate(45deg);
-        }
-    }
 }
 
 
