@@ -1,6 +1,325 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World!</h1>
-</body>
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <!--script src="../assets/js/color-modes.js"></script-->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <!-- <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.112.5"> -->
+    <title>Mariko Yoshida</title>
+
+    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/"> -->
+    <link href="./bootstrap.min.css" rel="stylesheet">
+    <link href="./main.css" rel="stylesheet">
+    <link href="./carousel.css" rel="stylesheet">
+    <link href="./navbar.css" rel="stylesheet">
+    <!--link href="features.css" rel="stylesheet"-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body>
+    <!-------------->
+    <!-- LANGUAGE -->
+    <!-------------->
+    <!-- <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+              Ja
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            En
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            Ja
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div> -->
+
+    <!-------------->
+    <!--　HEADER  -->
+    <!-------------->
+    <header>
+      <nav class="navbar position-fixed mb-3 me-3" id="navbar">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">Mariko Yoshida</a>
+          <div>En / <b>Ja</b></div>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#bio">Bio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#research">Research</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#publication">Publications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#teaching">Teaching</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#collaboration">Collaborations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#essay">Essay</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-------------->
+      <!-- CAROUSEL -->
+      <!-------------->
+      <div id="myCarousel" class="carousel slide pb-6">
+        <ol class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active" background="./assets/img/penguin-chicks.webp">
+            <img src="./assets/img/penguin-chicks.webp" class="carousel-img" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/img/penguin-fish.webp" class="carousel-img" alt="...">
+          </div>
+        </div>
+      </div>
+      
+      <div class="container">
+        <!--------------->
+        <!--   1.Bio   -->
+        <!--------------->
+        <div class="row" id="bio">
+          <div class="col-md-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+            <h2 class="fw-normal">吉田真理子</h2>
+            <p>肩書と専門</p>
+          </div>
+          <div class="col-md">
+            <p class="lead">簡単な自己紹介？もしくはショートバージョンのCV。</p>
+            <p class="lead">詳細なCVを別ページに飛ばしてもいいし、長くなければここに全部書いてもいい。</p>
+            <p><a class="btn btn-secondary" href="#">詳細なCV &raquo;</a></p>
+          </div>
+        </div>
+        <!-------------->
+        <!--2.Research-->
+        <!-------------->
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5" id="research">
+          <div class="col d-flex align-items-start">
+            <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg> -->
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">リサーチトピック</h3>
+              <p>リサーチはトピックの列挙のみ？それとも詳しい説明が必要？</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg> -->
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">リサーチトピック</h3>
+              <p>画像があったほうがよい？</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg> -->
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">リサーチトピック</h3>
+              <p>別リンクで飛ばす必要あり？</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg> -->
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">リサーチトピック</h3>
+              <p>説明</p>
+            </div>
+          </div>
+        </div>
+        <!------------------->
+        <!--3.Publications-->
+        <!------------------->
+        <div class="container py-5" id="publication">
+          <h1>Publications</h1>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="container-img my-2">
+                <img src="./assets/img/unsplash-photo-1.jpg" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text fw-bold text-body-emphasis">タイトル</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-body-secondary">日付</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="container-img my-2" height="250px">
+                <img src="./assets/img/unsplash-photo-2.jpg" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text fw-bold text-body-emphasis">タイトル</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-body-secondary">日付</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="container-img my-2" height="250px">
+                <img src="./assets/img/unsplash-photo-3.jpg" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text fw-bold text-body-emphasis">タイトル</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-body-secondary">日付</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-------------->
+        <!--2.Teaching-->
+        <!-------------->
+        <div class="py-5" id="teaching">
+          <h1>Teaching</h1>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-4">
+            <div class="col d-flex align-items-start">
+              <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg> -->
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">担当授業</h3>
+                <p>詳細説明</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg> -->
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">担当授業</h3>
+                <p>画像があったほうがよい？</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg> -->
+              <div>
+                <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">担当授業</h3>
+                <p>別リンクで飛ばす必要あり？</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-------------------->
+        <!--5.Collaborations-->
+        <!-------------------->
+        <div class="py-4" id="collaboration">
+          <h1>Publications</h1>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="container-img my-2">
+                <img src="./assets/img/unsplash-photo-1.jpg" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text fw-bold text-body-emphasis">タイトル</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-body-secondary">日付</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="container-img my-2" height="250px">
+                <img src="./assets/img/unsplash-photo-2.jpg" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text fw-bold text-body-emphasis">タイトル</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-body-secondary">日付</small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="container-img my-2" height="250px">
+                <img src="./assets/img/unsplash-photo-3.jpg" class="img-fluid" alt="...">
+              </div>
+              <div class="card-body">
+                <p class="card-text fw-bold text-body-emphasis">タイトル</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <small class="text-body-secondary">日付</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!------------->
+        <!-- 5.Essay -->
+        <!------------->
+        <div class="py-4" id="essay">
+          <h1>Essay</h1>
+          <div class="py-2">
+            <div class="row">
+              <div class="col-4">
+                <p>
+                  <span class="fw-bold text-body-emphasis">タイトル</span><br>
+                  <small>サブタイトル</small>
+                </p>
+              </div>
+              <div class="col">
+                <p>寄稿先等の情報</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <p>
+                  <span class="fw-bold text-body-emphasis">タイトル</span><br>
+                  <small>サブタイトル</small>
+                </p>
+              </div>
+              <div class="col">
+                <p>寄稿先等の情報</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <p>
+                  <span class="fw-bold text-body-emphasis">タイトル</span><br>
+                  <small>サブタイトル</small>
+                </p>
+              </div>
+              <div class="col">
+                <p>寄稿先等の情報</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="container">
+        <p>&copy; 2024 Mariko Yoshida</a></p>
+      </footer>
+    </main>
+
+    <script src="./bootstrap.bundle.min.js"></script>
+  </body>
 </html>
