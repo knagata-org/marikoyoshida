@@ -1,8 +1,6 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head>
-    <!--script src="../assets/js/color-modes.js"></script-->
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -11,14 +9,15 @@
     <title>Mariko Yoshida</title>
 
     <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/"> -->
-    <link href="./bootstrap.min.css" rel="stylesheet">
-    <link href="./main.css" rel="stylesheet">
-    <link href="./carousel.css" rel="stylesheet">
-    <link href="./navbar.css" rel="stylesheet">
-    <!--link href="features.css" rel="stylesheet"-->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-------------->
@@ -54,10 +53,12 @@
     <!--　HEADER  -->
     <!-------------->
     <header>
-      <nav class="navbar position-fixed mb-3 me-3" id="navbar">
+      <nav class="navbar fixed-top mb-3 me-3" id="navbar">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
           </button>
           <a class="navbar-brand" href="#">Mariko Yoshida</a>
           <div>En / <b>Ja</b></div>
@@ -95,7 +96,7 @@
       <!-------------->
       <!-- CAROUSEL -->
       <!-------------->
-      <div id="myCarousel" class="carousel slide pb-6">
+      <div id="myCarousel" class="carousel slide pb-6 carousel-fade on_fade">
         <ol class="carousel-indicators">
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
@@ -114,7 +115,7 @@
         <!--------------->
         <!--   1.Bio   -->
         <!--------------->
-        <div class="row" id="bio">
+        <div class="row  scroll_fade" id="bio">
           <div class="col-md-4">
             <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
             <h2 class="fw-normal">吉田真理子</h2>
@@ -129,7 +130,7 @@
         <!-------------->
         <!--2.Research-->
         <!-------------->
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5" id="research">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5  scroll_fade" id="research">
           <div class="col d-flex align-items-start">
             <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg> -->
             <div>
@@ -162,7 +163,7 @@
         <!------------------->
         <!--3.Publications-->
         <!------------------->
-        <div class="container py-5" id="publication">
+        <div class="container py-5  scroll_fade" id="publication">
           <h1>Publications</h1>
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
@@ -203,7 +204,7 @@
         <!-------------->
         <!--2.Teaching-->
         <!-------------->
-        <div class="py-5" id="teaching">
+        <div class="py-5  scroll_fade" id="teaching">
           <h1>Teaching</h1>
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-4">
             <div class="col d-flex align-items-start">
@@ -232,7 +233,7 @@
         <!-------------------->
         <!--5.Collaborations-->
         <!-------------------->
-        <div class="py-4" id="collaboration">
+        <div class="py-4  scroll_fade" id="collaboration">
           <h1>Publications</h1>
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
@@ -274,7 +275,7 @@
         <!------------->
         <!-- 5.Essay -->
         <!------------->
-        <div class="py-4" id="essay">
+        <div class="py-4  scroll_fade" id="essay">
           <h1>Essay</h1>
           <div class="py-2">
             <div class="row">
@@ -320,6 +321,6 @@
       </footer>
     </main>
 
-    <script src="./bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

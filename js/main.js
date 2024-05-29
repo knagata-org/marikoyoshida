@@ -4,7 +4,7 @@
 $(document).ready(function () {
     ////////// WINDOW SETTING //////////
     checkAspect();
-  });
+});
 
 ////////////////////////////////
 ///////// RESIZE EVENT /////////
@@ -37,7 +37,20 @@ const checkAspect = () => {
 
     const root = document.querySelector(':root');
     root.style.setProperty('--window-width', dw);
-  }
-  window.addEventListener('resize', checkAspect);
-  window.addEventListener("orientationchange", checkAspect);
-  
+}
+window.addEventListener('resize', checkAspect);
+window.addEventListener("orientationchange", checkAspect);
+
+$(window).scroll(function () {
+    var scrollAnimationElm = document.querySelectorAll('.scroll_fade');
+    var scrollAnimationFunc = function () {
+      for (var i = 0; i < scrollAnimationElm.length; i++) {
+        var triggerMargin = 100;
+        if (window.innerHeight > scrollAnimationElm[i].getBoundingClientRect().top + triggerMargin) {
+          scrollAnimationElm[i].classList.add('on');
+        }
+      }
+    }
+    window.addEventListener('load', scrollAnimationFunc);
+    window.addEventListener('scroll', scrollAnimationFunc);
+});
