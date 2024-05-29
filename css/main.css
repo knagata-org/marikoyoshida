@@ -35,15 +35,13 @@ body {
 h1 {
   font-family: var(--serif);
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 h2 {
   font-family: var(--serif);
   font-size: 1.5rem;
   font-weight: 600;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 h3 {
@@ -204,6 +202,13 @@ p {
   position: absolute;
 }
 
-#carousel-indicators > li {
+.carousel-indicators > li {
   border-radius: 50%;
+}
+
+/* -------------------- */
+/* ----  CONTENTS  ---- */
+/* -------------------- */
+.bio-name{
+  padding-top: 1rem;
 }
