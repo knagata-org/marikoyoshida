@@ -18,7 +18,8 @@
   --hover-color: #FFFA;
   --menu-display: none;
   --sans: "Lato", "Noto Sans JP", sans-serif;
-  --serif: "Noto Serif", "Noto Serif JP", serif;
+  /* --serif: "Lato", "Noto Sans JP", sans-serif; */
+  --serif: "Libre Caslon Text", "Shippori Mincho", serif;
 }
 
 /* ------------------ */
@@ -39,8 +40,12 @@ b{
 
 h1 {
   font-family: var(--serif);
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+h1.ja {
+  font-weight: 600;
 }
 
 h2 {
@@ -103,13 +108,16 @@ p {
   z-index: 9998;
   width: 100%;
   /* background-color: rgba(255,255,255,0.8); */
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgb(255, 255, 255, 0.9));
+  /* background: linear-gradient(0deg, rgba(255, 255, 255, 0), rgb(255, 255, 255, 0.9)); */
+  background: white;
 }
 
 .navbar-brand{
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
   display: block;
   margin: auto;
-  font-family: "EB Garamond", serif;;
+  font-family: var(--serif);
 }
 
 /* .navbar-collapse {
