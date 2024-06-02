@@ -54,42 +54,45 @@
     <!--　HEADER  -->
     <!-------------->
     <header>
-      <nav class="navbar fixed-top mb-3 me-3" id="navbar">
-        <div class="container-fluid">
-          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="toggler-icon top-bar"></span>
-            <span class="toggler-icon middle-bar"></span>
-            <span class="toggler-icon bottom-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">MARIKO YOSHIDA</a>
-          <div>En / <b>Ja</b></div>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#bio">Bio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#research">Research</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#publication">Publications</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#teaching">Teaching</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#collaboration">Collaborations</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#essay">Essay</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
+      <div class="fixed-top">
+        <nav class="navbar" id="navbar">
+          <div class="container-fluid">
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">MARIKO YOSHIDA</a>
+            <div class="navbar-lang">En / <b>Ja</b></div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#bio">Bio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#research">Research</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#publication">Publications</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#teaching">Teaching</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#collaboration">Collaborations</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#essay">Essay</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      <div class="navbar-filler"></div>
+      </div>
     </header>
 
     <main>
@@ -118,7 +121,7 @@
         <!--------------->
         <div class="row  scroll_fade" id="bio">
           <div class="col-md-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+            <!--svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg-->
             <h2 class="bio-name">吉田真理子</h2>
             <p>肩書と専門</p>
           </div>
@@ -164,7 +167,49 @@
         <!------------------->
         <!--3.Publications-->
         <!------------------->
-        <div class="py-5 scroll_fade" id="publication">
+        <div class="py-5" id="publication">
+          <h1>Publication</h1>
+          <div class="row  scroll_fade py-4">
+            <div class="col-md-4">
+              <div class="container-img my-2">
+                <img src="./assets/img/unsplash-photo-1.jpg" class="img-fluid" alt="...">
+              </div>
+            </div>
+            <div class="col-md">
+              <div>
+                <h3>タイトル</h3>
+                <p>説明</p>
+              </div>
+            </div>
+          </div>
+          <div class="row  scroll_fade">
+            <div class="col-md-4">
+              <div class="container-img my-2">
+                <img src="./assets/img/unsplash-photo-2.jpg" class="img-fluid" alt="...">
+              </div>
+            </div>
+            <div class="col-md">
+              <div>
+                <h3>タイトル</h3>
+                <p>説明</p>
+              </div>
+            </div>
+          </div>
+          <div class="row  scroll_fade">
+            <div class="col-md-4">
+              <div class="container-img my-2">
+                <img src="./assets/img/unsplash-photo-3.jpg" class="img-fluid" alt="...">
+              </div>
+            </div>
+            <div class="col-md">
+              <div>
+                <h3>タイトル</h3>
+                <p>説明</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--div class="py-5 scroll_fade" id="publication">
           <h1 class="ja">出版</h1>
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
@@ -195,7 +240,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div-->
         <!-------------->
         <!--2.Teaching-->
         <!-------------->
@@ -227,6 +272,15 @@
         <!-------------------->
         <div class="py-4  scroll_fade" id="collaboration">
           <h1>Collaborations</h1>
+          <div class="py-4">
+            <p>
+              ここにコラボレーションについてのテキストがくる。ここにコラボレーションについてのテキストがくる。ここにコラボレーションについてのテキストがくる。ここにコラボレーションについてのテキストがくる。ここにコラボレーションについてのテキストがくる。ここにコラボレーションについてのテキストがくる。</br>
+              改行するとこんな感じになる。改行するとこんな感じになる。改行するとこんな感じになる。改行するとこんな感じになる。
+            </p>
+            <p>
+              新しい段落はこんな感じ。
+            </p>
+          </div>
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
               <div class="container-img my-2">
@@ -263,7 +317,7 @@
         <!------------->
         <div class="py-4 scroll_fade" id="essay">
           <h1>Essay</h1>
-          <div class="py-2">
+          <div class="py-4">
             <div class="row">
               <div class="col-4">
                 <p>
