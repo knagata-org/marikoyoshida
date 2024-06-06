@@ -1,321 +1,399 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <!-- <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <!-- <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.112.5"> -->
-    <title>Mariko Yoshida</title>
+  <title>Mariko Yoshida</title>
 
-    <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/"> -->
-    <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?5f4e93294484479ca276223fac1e02e5" charset="utf-8"></script>
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link href="./css/main.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <script type="text/javascript" src="./js/main.js"></script>
+  <!-- <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/"> -->
+  <script type="text/javascript" src="//typesquare.com/3/tsst/script/ja/typesquare.js?5f4e93294484479ca276223fac1e02e5"
+    charset="utf-8"></script>
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/main.css" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Shippori+Mincho&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Shippori+Mincho&display=swap"
+    rel="stylesheet">
 </head>
-  <body>
-    <!-------------->
-    <!-- LANGUAGE -->
-    <!-------------->
-    <!-- <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
-              id="bd-theme"
-              type="button"
-              aria-expanded="false"
-              data-bs-toggle="dropdown"
-              aria-label="Toggle theme (auto)">
-              Ja
-        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
-      </button>
-      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-         En
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
-            Ja
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-      </ul>
-    </div> -->
 
-    <!-------------->
-    <!--　HEADER  -->
-    <!-------------->
-    <header>
-      <div class="fixed-top">
-        <nav class="navbar" id="navbar">
-          <div class="container-fluid">
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="toggler-icon top-bar"></span>
-              <span class="toggler-icon middle-bar"></span>
-              <span class="toggler-icon bottom-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">MARIKO YOSHIDA</a>
-            <div class="navbar-lang">En / <b>Ja</b></div>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#bio">Bio</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#research">Research</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#publication">Publications</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#teaching">Teaching</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#collaboration">Collaborations</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#essay">Essay</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
-            </div>
+<body>
+  <!-------------->
+  <!--　HEADER  -->
+  <!-------------->
+  <header>
+    <div class="fixed-top">
+      <nav class="navbar" id="navbar">
+        <div class="container-fluid">
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">MARIKO YOSHIDA</a>
+          <div class="navbar-lang" onclick="changelang(this)"><span class="lang-en">En</span> / <span class="lang-ja">Ja</span></div>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#bio">Bio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#publication">Publications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#teaching">Teaching</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#collaboration">Collaborations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#essay">Essay</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
           </div>
-        </nav>
+        </div>
+      </nav>
       <div class="navbar-filler"></div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-------------->
+    <!-- CAROUSEL -->
+    <!-------------->
+    <div id="myCarousel" class="carousel slide pb-6 carousel-fade on_fade">
+      <ol class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active" background="./assets/img/penguin-chicks.webp">
+          <img src="./assets/img/penguin-chicks.webp" class="carousel-img" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./assets/img/penguin-fish.webp" class="carousel-img" alt="...">
+        </div>
       </div>
-    </header>
+    </div>
 
-    <main>
-
+    <!--------------->
+    <!--   1.Bio   -->
+    <!--------------->
+    <div class="container" id="bio">
+      <!-- ja -->
+      <div class="content ja row scroll_fade">
+        <div class="col-md-4">
+          <!--svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg-->
+          <h2 class="bio-name">吉田真理子</h2>
+          <p>肩書と専門</p>
+        </div>
+        <div class="col-md">
+          <p>簡単な自己紹介？もしくはショートバージョンのCV。</p>
+          <p>詳細なCVを別ページに飛ばしてもいいし、長くなければここに全部書いてもいい。</p>
+          <p><a class="button" href="#">see full CV &raquo;</a></p>
+        </div>
+      </div>
+      <!-- en -->
+      <div class="content en row scroll_fade">
+        <div class="col-md-4">
+          <!--svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg-->
+          <h2 class="bio-name">Mariko Yoshida</h2>
+          <p>title and major</p>
+        </div>
+        <div class="col-md">
+          <p>This is a test paragraph for short CV.</p>
+          <p><a class="button" href="#">see full CV &raquo;</a></p>
+        </div>
+      </div>
       <!-------------->
-      <!-- CAROUSEL -->
+      <!--2.Research-->
       <!-------------->
-      <div id="myCarousel" class="carousel slide pb-6 carousel-fade on_fade">
-        <ol class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active" background="./assets/img/penguin-chicks.webp">
-            <img src="./assets/img/penguin-chicks.webp" class="carousel-img" alt="...">
+      <!-- ja -->
+      <div class="content ja row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5  scroll_fade">
+        <div class="col d-flex align-items-start">
+          <div>
+            <h3>リサーチトピック</h3>
+            <p>リサーチはトピックの列挙のみ？それとも詳しい説明が必要？</p>
           </div>
-          <div class="carousel-item">
-            <img src="./assets/img/penguin-fish.webp" class="carousel-img" alt="...">
+        </div>
+        <div class="col d-flex align-items-start">
+          <div>
+            <h3>リサーチトピック</h3>
+            <p>説明</p>
           </div>
         </div>
       </div>
-      
-      <div class="container">
-        <!--------------->
-        <!--   1.Bio   -->
-        <!--------------->
-        <div class="row  scroll_fade" id="bio">
+      <!-- en -->
+      <div class="content en row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5  scroll_fade"
+        id="research">
+        <div class="col d-flex align-items-start">
+          <div>
+            <h3>Research topic</h3>
+            <p>This is a test paragraph for research topic.</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <div>
+            <h3>Research topic</h3>
+            <p>This is a test paragraph for research topic.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!------------------->
+    <!--3.Publications-->
+    <!------------------->
+    <div class="container" id="publication">
+      <!-- ja -->
+      <div class="content ja py-5">
+        <h1>Publication</h1>
+        <div class="row  scroll_fade">
           <div class="col-md-4">
-            <!--svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg-->
-            <h2 class="bio-name">吉田真理子</h2>
-            <p>肩書と専門</p>
+            <div class="container-img my-2">
+              <img src="./assets/img/unsplash-photo-1.jpg" alt="...">
+            </div>
           </div>
           <div class="col-md">
-            <p>簡単な自己紹介？もしくはショートバージョンのCV。</p>
-            <p>詳細なCVを別ページに飛ばしてもいいし、長くなければここに全部書いてもいい。</p>
-            <p><a class="btn btn-secondary" href="#">詳細なCV &raquo;</a></p>
-          </div>
-        </div>
-        <!-------------->
-        <!--2.Research-->
-        <!-------------->
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5  scroll_fade" id="research">
-          <div class="col d-flex align-items-start">
-            <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg> -->
             <div>
-              <h3>リサーチトピック</h3>
-              <p>リサーチはトピックの列挙のみ？それとも詳しい説明が必要？</p>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg> -->
-            <div>
-              <h3 class="en">Research Topic</h3>
-              <p class="en">This is a test paragraph for english text. English titles are slightly thicker than Japanese titles because of the difference of font design.</p>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg> -->
-            <div>
-              <h3 class="serif">リサーチトピック</h3>
-              <p>明朝でタイトルを出すときのサンプルです。H2以上の見出しテキストでの使用が想定されています。LPでは見出しは英文が採用されているため使用しません。リサーチやコラボレーションなどの別ページで使用する可能性があります。</p>
-            </div>
-          </div>
-          <div class="col d-flex align-items-start">
-            <!-- <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg> -->
-            <div>
-              <h3>リサーチトピック</h3>
+              <h3>タイトル</h3>
               <p>説明</p>
             </div>
           </div>
         </div>
-        <!------------------->
-        <!--3.Publications-->
-        <!------------------->
-        <div class="py-5" id="publication">
-          <h1>Publication</h1>
-          <div class="row  scroll_fade py-4">
-            <div class="col-md-4">
-              <div class="container-img my-2">
-                <img src="./assets/img/unsplash-photo-1.jpg" class="img-fluid" alt="...">
-              </div>
-            </div>
-            <div class="col-md">
-              <div>
-                <h3>タイトル</h3>
-                <p>説明</p>
-              </div>
+        <div class="row  scroll_fade">
+          <div class="col-md-4">
+            <div class="container-img my-2">
+              <img src="./assets/img/unsplash-photo-2.jpg" alt="...">
             </div>
           </div>
-          <div class="row  scroll_fade">
-            <div class="col-md-4">
-              <div class="container-img my-2">
-                <img src="./assets/img/unsplash-photo-2.jpg" class="img-fluid" alt="...">
-              </div>
-            </div>
-            <div class="col-md">
-              <div>
-                <h3>タイトル</h3>
-                <p>説明</p>
-              </div>
-            </div>
-          </div>
-          <div class="row  scroll_fade">
-            <div class="col-md-4">
-              <div class="container-img my-2">
-                <img src="./assets/img/unsplash-photo-3.jpg" class="img-fluid" alt="...">
-              </div>
-            </div>
-            <div class="col-md">
-              <div>
-                <h3>タイトル</h3>
-                <p>説明</p>
-              </div>
+          <div class="col-md">
+            <div>
+              <h3>タイトル</h3>
+              <p>説明</p>
             </div>
           </div>
         </div>
-        <!--div class="py-5 scroll_fade" id="publication">
-          <h1 class="ja">出版</h1>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col">
-              <div class="container-img my-2">
-                <img src="./assets/img/unsplash-photo-1.jpg" class="img-fluid" alt="...">
-              </div>
-              <div class="card-body">
-                <p><b>タイトル</b></p>
-                <p>日付</p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="container-img my-2" height="250px">
-                <img src="./assets/img/unsplash-photo-2.jpg" class="img-fluid" alt="...">
-              </div>
-              <div class="card-body">
-                <p><b>タイトル</b></p>
-                <p>日付</p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="container-img my-2" height="250px">
-                <img src="./assets/img/unsplash-photo-3.jpg" class="img-fluid" alt="...">
-              </div>
-              <div class="card-body">
-                <p><b>タイトル</b></p>
-                <p>日付</p>
-              </div>
+        <div class="row  scroll_fade">
+          <div class="col-md-4">
+            <div class="container-img my-2">
+              <img src="./assets/img/unsplash-photo-3.jpg" alt="...">
             </div>
           </div>
-        </div-->
-        <!-------------->
-        <!--2.Teaching-->
-        <!-------------->
-        <div class="py-5  scroll_fade" id="teaching">
-          <h1>Teaching</h1>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-4">
-            <div class="col d-flex align-items-start">
-              <div>
-                <h3>担当授業</h3>
-                <p>詳細説明</p>
-              </div>
-            </div>
-            <div class="col d-flex align-items-start">
-              <div>
-                <h3>担当授業</h3>
-                <p>詳細説明</p>
-              </div>
-            </div>
-            <div class="col d-flex align-items-start">
-              <div>
-                <h3>担当授業</h3>
-                <p>詳細説明</p>
-              </div>
+          <div class="col-md">
+            <div>
+              <h3>タイトル</h3>
+              <p>説明</p>
             </div>
           </div>
         </div>
-        <!-------------------->
-        <!--5.Collaborations-->
-        <!-------------------->
-        <div class="py-4  scroll_fade" id="collaboration">
-          <h1>Collaborations</h1>
-          <div class="py-4">
-            <p>
-              ここにコラボレーションについてのテキストがくる。ここにコラボレーションについてのテキストがくる。ここにコラボレーションについてのテキストがくる。ここにコラボレーションについてのテキストがくる。ここにコラボレーションについてのテキストがくる。ここにコラボレーションについてのテキストがくる。</br>
-              改行するとこんな感じになる。改行するとこんな感じになる。改行するとこんな感じになる。改行するとこんな感じになる。
-            </p>
-            <p>
-              新しい段落はこんな感じ。
-            </p>
+        <!-- <div class="row  scroll_fade"> -->
+        <a class="button" href="#">see all publications &raquo;</a>
+        <!-- </div> -->
+      </div>
+      <!-- en -->
+      <div class="content en py-5">
+        <h1>Publication</h1>
+        <div class="row  scroll_fade">
+          <div class="col-md-4">
+            <div class="container-img my-2">
+              <img src="./assets/img/unsplash-photo-1.jpg" alt="...">
+            </div>
           </div>
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-            <div class="col">
-              <div class="container-img my-2">
-                <img src="./assets/img/unsplash-photo-1.jpg" class="img-fluid" alt="...">
-              </div>
-              <div class="card-body">
-                <p><b>タイトル</b></p>
-                <p>日付</p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="container-img my-2" height="250px">
-                <img src="./assets/img/unsplash-photo-2.jpg" class="img-fluid" alt="...">
-              </div>
-              <div class="card-body">
-                <p><b>タイトル</b></p>
-                <p>日付</p>
-              </div>
-            </div>
-            <div class="col">
-              <div class="container-img my-2" height="250px">
-                <img src="./assets/img/unsplash-photo-3.jpg" class="img-fluid" alt="...">
-              </div>
-              <div class="card-body">
-                <p><b>タイトル</b></p>
-                <p>日付</p>
-              </div>
+          <div class="col-md">
+            <div>
+              <h3>Title</h3>
+              <p>content</p>
             </div>
           </div>
         </div>
-
-        <!------------->
-        <!-- 5.Essay -->
-        <!------------->
-        <div class="py-4 scroll_fade" id="essay">
+        <div class="row  scroll_fade">
+          <div class="col-md-4">
+            <div class="container-img my-2">
+              <img src="./assets/img/unsplash-photo-2.jpg" alt="...">
+            </div>
+          </div>
+          <div class="col-md">
+            <div>
+              <h3>Title</h3>
+              <p>content</p>
+            </div>
+          </div>
+        </div>
+        <div class="row  scroll_fade">
+          <div class="col-md-4">
+            <div class="container-img my-2">
+              <img src="./assets/img/unsplash-photo-3.jpg" alt="...">
+            </div>
+          </div>
+          <div class="col-md">
+            <div>
+              <h3>Title</h3>
+              <p>content</p>
+            </div>
+          </div>
+        </div>
+        <div class="scroll_fade">
+          <a class="button" href="#">see all publications &raquo;</a>
+        </div>
+      </div>
+    </div>
+    <!-------------->
+    <!--2.Teaching-->
+    <!-------------->
+    <div class="container" id="teaching">
+      <!-- ja -->
+      <div class="content ja py-5 scroll_fade">
+        <h1>Teaching</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-4">
+          <div class="col d-flex align-items-start">
+            <div>
+              <h3>担当授業</h3>
+              <p>詳細説明</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div>
+              <h3>担当授業</h3>
+              <p>詳細説明</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div>
+              <h3>担当授業</h3>
+              <p>詳細説明</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- en -->
+      <div class="content en py-5 scroll_fade">
+        <h1>Teaching</h1>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-4">
+          <div class="col d-flex align-items-start">
+            <div>
+              <h3>Class</h3>
+              <p>content</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div>
+              <h3>Class</h3>
+              <p>content</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div>
+              <h3>Class</h3>
+              <p>content</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------->
+    <!--5.Collaborations-->
+    <!-------------------->
+    <div class="container" id="collaboration">
+      <!-- ja -->
+      <div class="content ja py-4 scroll_fade">
+        <h1>Collaborations</h1>
+        <div class="py-4">
+          <p>
+            ここにコラボレーションについてのテキストがくる。ここにコラボレーションについてのテキストがくる。ここにコラボレーションについてのテキストがくる。ここにコラボレーションについてのテキストがくる。ここにコラボレーションについてのテキストがくる。ここにコラボレーションについてのテキストがくる。</br>
+            改行するとこんな感じになる。改行するとこんな感じになる。改行するとこんな感じになる。改行するとこんな感じになる。
+          </p>
+          <p>
+            新しい段落はこんな感じ。
+          </p>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="container-img my-2">
+              <img src="./assets/img/unsplash-photo-1.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <p><b>タイトル</b></p>
+              <p>日付</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="container-img my-2" height="250px">
+              <img src="./assets/img/unsplash-photo-2.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <p><b>タイトル</b></p>
+              <p>日付</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="container-img my-2" height="250px">
+              <img src="./assets/img/unsplash-photo-3.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <p><b>タイトル</b></p>
+              <p>日付</p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row  scroll_fade"> -->
+        <a class="button" href="#">see all collaborations &raquo;</a>
+        <!-- </div> -->
+      </div>
+      <!-- en -->
+      <div class="content en py-4 scroll_fade">
+        <h1>Collaborations</h1>
+        <div class="py-4">
+          <p>
+            This is a test paragraph for collaborations.
+          </p>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="container-img my-2">
+              <img src="./assets/img/unsplash-photo-1.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <p><b>Title</b></p>
+              <p>date</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="container-img my-2" height="250px">
+              <img src="./assets/img/unsplash-photo-2.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <p><b>Title</b></p>
+              <p>date</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="container-img my-2" height="250px">
+              <img src="./assets/img/unsplash-photo-3.jpg" alt="...">
+            </div>
+            <div class="card-body">
+              <p><b>Title</b></p>
+              <p>date</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!------------->
+      <!-- 5.Essay -->
+      <!------------->
+      <div class="container" id="essay">
+        <!-- ja -->
+        <div class="content ja py-4 scroll_fade">
           <h1>Essay</h1>
           <div class="py-4">
             <div class="row">
@@ -331,14 +409,34 @@
             </div>
           </div>
         </div>
-      <!-- </div> -->
+        <!-- en -->
+        <div class="content en py-4 scroll_fade">
+          <h1>Essay</h1>
+          <div class="py-4">
+            <div class="row">
+              <div class="col-4">
+                <p>
+                  <b>Title</b><br>
+                  Subtitle
+                </p>
+              </div>
+              <div class="col">
+                <p>content</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </main>
+  <!-- FOOTER -->
+  <footer class="container">
+    <p>&copy; 2024 Mariko Yoshida</a></p>
+  </footer>
 
-      <!-- FOOTER -->
-      <footer class="container">
-        <p>&copy; 2024 Mariko Yoshida</a></p>
-      </footer>
-    </main>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
 
-    <script src="./js/bootstrap.bundle.min.js"></script>
-  </body>
 </html>
